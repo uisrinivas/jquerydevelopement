@@ -1,0 +1,35 @@
+{
+  "name": "sampledemo",
+  "description": "sample project",
+  "main": "index.js",
+  "authors": [
+    "srinivas"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "test",
+    "project"
+  ],
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1",
+    "font-awesome": "^4.5.0"
+  },
+  "devDependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}

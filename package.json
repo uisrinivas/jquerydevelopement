@@ -1,0 +1,32 @@
+{
+  "name": "jquerydevelopement",
+  "version": "1.0.0",
+  "description": "sample project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "test",
+    "project"
+  ],
+  "author": "srinivas",
+  "license": "ISC",
+  "dependencies": {
+    "bower": "^1.7.7",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "qunitjs": "^1.22.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uisrinivas/jquerydevelopement.git"
+  },
+  "bugs": {
+    "url": "https://github.com/uisrinivas/jquerydevelopement/issues"
+  },
+  "homepage": "https://github.com/uisrinivas/jquerydevelopement#readme"
+}
