@@ -4,6 +4,8 @@ var babel = require('gulp-babel');
 var concat = require('gulp-concat');
 var htmlmin = require('gulp-htmlmin');
 var imagemin = require('gulp-imagemin');
+var jshint = require('gulp-jshint');
+ var eslint = require('gulp-eslint');
 
 gulp.task('script',function(){
 	return gulp.src('public/js/**/*.js')
@@ -30,4 +32,11 @@ gulp.task('image',function(){
 	.pipe(gulp.dest('dist/images'));
 })
 
+gulp.task('lint', function() {
+  return gulp.src('public/js/**/*.js')
+    .pipe(jshint())
+    .pipe(jshint.reporter('default'))
+});
+
 gulp.task('default',['script','minify','image'])
+gulp.task('validation',['lint'])
