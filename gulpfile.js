@@ -18,14 +18,14 @@ gulp.task('script',function(){
 	}))
 	.pipe(concat('all.js'))
 	.pipe(sourcemaps.write())
-	.pipe(connect.reload());
+	.pipe(connect.reload())
 	.pipe(gulp.dest('dist/js'))
 })
 
 gulp.task('minify', function() {
   return gulp.src('public/*.html')
     .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(connect.reload());
+    .pipe(connect.reload())
     .pipe(gulp.dest('dist/'))
 });
 
@@ -46,7 +46,7 @@ gulp.task('lint', function() {
 gulp.task('css', function () {
   return gulp.src('public/css/**/*.css')
     .pipe(concatCss("bundle.css"))
-    .pipe(connect.reload());
+    .pipe(connect.reload())
     .pipe(gulp.dest('dist/css/'));
 });
 
